@@ -30,3 +30,9 @@ Z=C
 ![alt tag] (https://raw2.github.com/TylerSpence/ECE281_Lab1/master/circuit%202.png)
 
 The results of the waveform correspond with the intended results of the truth table. For each level on the waveform graph there are two discrete values, corresponding to a 0 and 1. Each level corresponds to the intended value on the truth table.
+
+#Code
+![alt tag] (https://raw2.github.com/TylerSpence/ECE281_Lab1/master/Lab1_Spence.vhd)
+
+#Testbench code
+![alt tag] (https://raw2.github.com/TylerSpence/ECE281_Lab1/master/Lab1_testbench_Spence.vhd)
