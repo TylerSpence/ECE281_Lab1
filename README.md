@@ -17,7 +17,7 @@ ECE281_Lab1
 |  1 |  1  |  1  |   0 |   0 |   1 |
 
 #Minimal SOP Equations
-X=A'(B+C)+AB'C'
+X=A'(B+C)+AB'C' 
 Y=BC'+B'C
 Z=c
 
