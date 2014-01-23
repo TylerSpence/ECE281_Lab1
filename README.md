@@ -18,8 +18,10 @@ ECE281_Lab1
 
 #Minimal SOP Equations
 X=A'(B+C)+AB'C' 
+
 Y=BC'+B'C
-Z=c
+
+Z=C
 
 #Analysis of Waveform:
 ![alt tag] (https://raw2.github.com/TylerSpence/ECE281_Lab1/master/screenshot.png)
