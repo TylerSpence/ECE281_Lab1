@@ -41,6 +41,6 @@ I demonstrated the functionality of my 3 bit converter to Captain Silva in class
 
 #Final Schematic
 Below is the schematic for the 8 bit converter. Instead of using multiple logic equations, it simply uses an inversion command and adds one, hence performing the arithmatic done to get the two's complement. It can easily be modified for any number of inputs.
-![alt tag] (https://github.com/TylerSpence/ECE281_Lab1/blob/master/8bitschematic.png)
+![alt tag] (https://raw.github.com/TylerSpence/ECE281_Lab1/master/8bitschematic.png)
 
 
