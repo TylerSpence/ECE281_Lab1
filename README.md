@@ -38,3 +38,9 @@ This turned out to be due to me using generic coding due to having a general lac
 
 #Testing
 I demonstrated the functionality of my 3 bit converter to Captain Silva in class on Monday the 27th of January and demonstrated the funtionality of my 8 bit converter to him in his office later that day. 
+
+#Final Schematic
+Below is the schematic for the 8 bit converter. Instead of using multiple logic equations, it simply uses an inversion command and adds one, hence performing the arithmatic done to get the two's complement. It can easily be modified for any number of inputs.
+![alt tag] (https://github.com/TylerSpence/ECE281_Lab1/blob/master/8bitschematic.png)
+
+
