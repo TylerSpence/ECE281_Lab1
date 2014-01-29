@@ -19,6 +19,15 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+entity twoscompliment is
+  port (   
+           --Inputs
+           A : in std_logic_vector (7 downto 0);
+           --Outputs
+           Z : out std_logic_vector (7 downto 0)
+			  );
+end twoscompliment;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -29,32 +38,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Lab1_Spence is
-    Port ( A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
-           C : in  STD_LOGIC;
-           X : out  STD_LOGIC;
-           Y : out  STD_LOGIC;
-           Z : out  STD_LOGIC);
-end Lab1_Spence;
+--entity Lab1_Spence is
+   -- Port ( A : in  STD_LOGIC;
+    --       B : in  STD_LOGIC;
+    --       C : in  STD_LOGIC;
+    --       X : out  STD_LOGIC;
+      --     Y : out  STD_LOGIC;
+      --     Z : out  STD_LOGIC);
+--end Lab1_Spence;
 
-architecture Behavioral of Lab1_Spence is
-signal A_NOT, B_NOT, C_NOT, D, E, F, G, H, I, J : STD_LOGIC;
+architecture twoscompliment_v1 of twoscompliment is
+
 begin
 
-A_NOT <= not A;
-B_NOT <= not B;
-C_NOT <= not C;
-D <= A_NOT and B; 
-E <= A_NOT and C; 
-F <= A and B_NOT;
-G <= F and C_NOT;
-H <= G or E;
-X <= H or D;
-I <= B and C_NOT;
-J <= B_NOT and C;
-Y <= I or J;
-Z <= C;
-
-end Behavioral;
+  Z    <= std_logic_vector (unsigned(not (A)) + 1);
+end twoscompliment_v1;
 
