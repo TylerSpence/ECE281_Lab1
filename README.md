@@ -36,5 +36,5 @@ When creating the first ucf file (for the 3-bit model) I encountered issues with
 When creating the vhdl file for the 8 bit model, I encountered issues with defining Z in the "begin" section. 
 This turned out to be due to me using generic coding due to having a general lack of orientation with coding. I fixed this and then the syntax worked correctly for everything.
 
-#Demonstration
+#Testing
 I demonstrated the functionality of my 3 bit converter to Captain Silva in class on Monday the 27th of January and demonstrated the funtionality of my 8 bit converter to him in his office later that day. 
