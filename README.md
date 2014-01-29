@@ -31,6 +31,40 @@ Z=C
 
 The results of the waveform correspond with the intended results of the truth table. For each level on the waveform graph there are two discrete values, corresponding to a 0 and 1. Each level corresponds to the intended value on the truth table.
 
+#Code
+Initially, for 3-bit funcionality the input and output signals must be declared
+```VHDL
+ Port ( A : in  STD_LOGIC;
+            B : in  STD_LOGIC;
+            C : in  STD_LOGIC;
+            X : out  STD_LOGIC;
+            Y : out  STD_LOGIC;
+            Z : out  STD_LOGIC);
+ end Lab1_Spence;
+``` 
+Then, the architecture of the program must be declared.
+```VHDL
+ architecture Behavioral of Lab1_Spence is
+ signal A_NOT, B_NOT, C_NOT, D, E, F, G, H, I, J : STD_LOGIC;
+ begin
+```
+And finally, the logic deduced from the sop equations must be implemented.
+```VHDL
+ A_NOT <= not A;
+ B_NOT <= not B;
+ C_NOT <= not C;
+ D <= A_NOT and B; 
+ E <= A_NOT and C; 
+ F <= A and B_NOT;
+ G <= F and C_NOT;
+ H <= G or E;
+ X <= H or D;
+ I <= B and C_NOT;
+ J <= B_NOT and C;
+ Y <= I or J;
+ Z <= C;
+```
+
 #Debugging
 When creating the first ucf file (for the 3-bit model) I encountered issues with the msb and had to switch the order of A,B, and C. 
 When creating the vhdl file for the 8 bit model, I encountered issues with defining Z in the "begin" section. 
