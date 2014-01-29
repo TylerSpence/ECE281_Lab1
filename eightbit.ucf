@@ -4,16 +4,11 @@ NET "A[2]" LOC = "K18";
 NET "A[3]" LOC = "K17";
 NET "A[4]" LOC = "L14";
 NET "A[5]" LOC = "L13"; 
-
 NET "A[6]" LOC = "N17"; 
-
 NET "A[7]" LOC = "R17"; 
 
-
 NET "Z[0]" LOC = "J14";
-
 NET "Z[1]" LOC = "J15";
-
 NET "Z[2]" LOC = "K15";
 NET "Z[3]" LOC = "K14";
 NET "Z[4]" LOC = "E17";
